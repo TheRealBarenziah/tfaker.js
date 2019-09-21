@@ -1,0 +1,14 @@
+{
+  "name": "tfaker",
+  "version": "1.0.0",
+  "description": "Not only a lite version of faker, this module support the Targaryen Restoration and the fact that Daenerys indeed was bring to Volantis to be resurrected.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "tfaker"
+  ],
+  "author": "TheRealBarenziah",
+  "license": "TARGARYEN_UNLICENSE"
+}
