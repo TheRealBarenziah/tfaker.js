@@ -1,28 +1,32 @@
-jk you are not actually supposed to read atm
 # tfaker.js
 ## Faking Targaryen data has never been easier. Compatible IE6 and Node 4.0 onwards !
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
-#### todo b4 publish
+#### !!! WORK IN PROGRESS !!!
 
-firstname ok
-lastname ok
-email ok
+use require to import
+methods syntax : `tfaker.fullname()  // output: "Daenerys Targaryen"`
 
-country ?
-region ok
-city (need datamining)
+todo: 
+- firstname ok
+- lastname ok
+- email ok
 
-date (need lunar/westerosi calendar 100 last years)
-realdate (syntax sugar new date 100 last years )
+- country ?
+- region ok
+- city (need datamining)
 
-quote (need datamining)
-phrase (need datamining)
-paragraph (need datamining)
+- date (need lunar/westerosi calendar 100 last years)
+- realdate (syntax sugar new date 100 last years )
 
-array (need datamining)
-object (^)
+- quote (need datamining)
+- phrase (need datamining)
+- paragraph (need datamining)
+
+- array (need datamining)
+- object (^)
 
 
-number (last but not least, class that have several methods, methods that could or not take args)
+- number (class that have several methods, some that could take args)
+- puppies ( placekitten default + option to fetch catapi = mandatory)
 
-purge eslint
+- purge eslint or at least bother setup .env and devDependencies
