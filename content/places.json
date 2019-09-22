@@ -1,0 +1,16 @@
+{
+  "countries": [
+    "Westeros",
+    "Essos"
+  ],
+  "regions": [
+    "Region a",
+    "Region b",
+    "Region c"
+  ],
+  "cities": [
+    "City a",
+    "City b",
+    "City c"
+  ]
+}
