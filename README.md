@@ -3,16 +3,17 @@
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 #### !!! WORK IN PROGRESS !!!
 
-use require to import
-methods syntax : `tfaker.fullname()  // output: "Daenerys Targaryen"`
+- use require to import
+- methods syntax : `tfaker.fullname()  // output -> "Daenerys Targaryen"`
 
-todo: 
-- firstname ok
-- lastname ok
-- email ok
+##### todo: 
+- firstname works
+- lastname works
+- fullname works
+- email works
 
 - country ?
-- region ok
+- region works
 - city (need datamining)
 
 - date (need lunar/westerosi calendar 100 last years)
