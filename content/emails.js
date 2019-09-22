@@ -5,10 +5,13 @@ module["exports"] = {
     "dracarys",
     "dragon",
     "dragonfire",
+    "dragonegg",
     "dragonstone",
+    "fireandblood",
     "newvalyria",
     "oldvalyria",
-    "valyria"
+    "valyria",
+    "wildfire"
   ],
   "domains": [
     "@dragonstone.ovl",

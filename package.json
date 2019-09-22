@@ -1,7 +1,7 @@
 {
   "name": "tfaker",
   "version": "1.0.0",
-  "description": "A lite and comprehensive version of faker.js, this module also helps developers in supporting the Targaryen Restoration.",
+  "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
   "main": "index.js",
   "scripts": {
     "test": "echo 'hello'",

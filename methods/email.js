@@ -21,10 +21,10 @@ module.exports = exports = function email () {
     return "xXx_" + haxzor(randomWord) + Math.floor(random / 10) + "_xXx" + randomDomain;
   }
   if ( ( 25 < random ) && ( random <= 50 ) ) {
-    return "uwu-" + randomWord + "chan" + random + randomDomain;
+    return randomWord + "chan" + random + randomDomain;
   }
   if ( ( 50 < random ) && ( random <= 75 ) ) {
-    return "uwu_" + randomWord + "qt" + Math.floor(random / 10) + randomDomain;
+    return "uwu" + randomWord + "qt" + Math.floor(random / 10) + "uwu" + randomDomain;
   }
   else return randomWord + random + randomDomain;
 };
