@@ -1,6 +1,5 @@
-function LastName (tfaker) {
-  this.lastName = function lastName (string) {
-    console.log(theOnlyRightfulOne)
-    return 1
-  }
-}
+var lastName = require("../content/lastname.js");
+
+module.exports = exports = function lastname () {
+  return lastName;
+};

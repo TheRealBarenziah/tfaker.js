@@ -1,1 +1,1 @@
-module["exports"] = "Targaryen"
+module["exports"] = "Targaryen";

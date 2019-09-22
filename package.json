@@ -1,14 +1,19 @@
 {
   "name": "tfaker",
   "version": "1.0.0",
-  "description": "Not only a lite version of faker, this module support the Targaryen Restoration and the fact that Daenerys indeed was bring to Volantis to be resurrected.",
+  "description": "A lite and comprehensive version of faker.js, this module also helps developers in supporting the Targaryen Restoration.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo 'hello'",
+    "lint": "./node_modules/.bin/eslint --color . --ext .js,.jsx",
+    "lint:fix": "./node_modules/.bin/eslint --fix . --ext .js,.jsx"
   },
   "keywords": [
     "tfaker"
   ],
   "author": "TheRealBarenziah",
-  "license": "TARGARYEN_UNLICENSE"
+  "license": "TARGARYEN_UNLICENSE",
+  "dependencies": {
+    "eslint": "^6.4.0"
+  }
 }

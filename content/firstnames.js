@@ -53,4 +53,4 @@ module["exports"] = [
   "Visenya",
   "Viserra",
   "Viserys"
-]
+];
