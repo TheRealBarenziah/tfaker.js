@@ -14,11 +14,11 @@ module["exports"] = {
     "wildfire"
   ],
   "domains": [
-    "@dragonstone.ovl",
+    "@dragonstone.wst",
     "@dragonstone.ovy",
-    "@dragonstone.trg",
-    "@redkeep.ovl",
+    "@dragonstone.io",
+    "@redkeep.wst",
     "@redkeep.ovy",
-    "@redkeep.trg"
+    "@redkeep.io"
   ]
 };
