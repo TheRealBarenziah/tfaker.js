@@ -7,3 +7,4 @@ module["exports"] = tfaker;
 // console.log(tfaker.lastname());
 // console.log(tfaker.fullname());
 // console.log(tfaker.region());
+console.log(tfaker.email());
