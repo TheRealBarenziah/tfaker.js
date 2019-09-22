@@ -29,4 +29,4 @@ todo:
 - number (class that have several methods, some that could take args)
 - puppies ( placekitten default + option to fetch catapi = mandatory)
 
-- purge eslint or at least bother setup .env and devDependencies
+- purge eslint or bother to setup .env devDependencies etc.
