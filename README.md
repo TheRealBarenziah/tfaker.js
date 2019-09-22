@@ -1,5 +1,8 @@
 jk you are not actually supposed to read atm
-### todo b4 publish
+# tfaker.js
+## Faking Targaryen data has never been easier. Compatible IE6 and Node 4.0 onwards !
+![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
+#### todo b4 publish
 
 firstname ok
 lastname ok
