@@ -4,11 +4,16 @@
 #### !!! WORK IN PROGRESS !!!
 
 - import syntax : 
-    var tfaker = require("tfaker");   // if you installed with npm (tfaker is in node_modules)   
-    var tfaker = require("./tfaker");   // if you installed with clone (put absolute path to tfaker/index.js)
+```
+var tfaker = require("tfaker");   // if you installed with npm (tfaker is in node_modules)   
+var tfaker = require("./tfaker");   // if you installed with clone (put absolute path to tfaker/index.js)
+```
+
 - methods syntax : 
-    tfaker.fullname()  
-    // output -> "Daenerys Targaryen"
+```
+tfaker.fullname()  
+// output -> "Daenerys Targaryen"
+```
 
 ##### todo: 
 - firstname works
