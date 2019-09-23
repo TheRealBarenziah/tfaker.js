@@ -7,6 +7,8 @@ function Tfaker (){
 
   self.region = require("./region.js");
 
+  self.realdate = require("./realdate");
+
   return this;
 }
 
