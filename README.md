@@ -1,12 +1,13 @@
 # tfaker.js
-## Faking Targaryen data has never been easier. Compatible IE6 and Node 4.0 onwards !
+## Faking Targaryen data has never been easier. 
+## Compatible IE6 and Node 0.10.48 onwards !
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 #### !!! WORK IN PROGRESS !!!
 
 - import syntax : 
 ```
-var tfaker = require("tfaker");   // if you installed with npm (tfaker is in node_modules)   
-var tfaker = require("./tfaker");   // if you installed with clone (put absolute path to tfaker/index.js)
+var tfaker = require("tfaker");   // you installed with npm (tfaker is in node_modules)   
+var tfaker = require("./tfaker");   // you installed with clone (absolute path to tfaker/index.js)
 ```
 
 - methods syntax : 
@@ -44,3 +45,4 @@ tfaker.fullname()
 - catapi (min 1 argument: catapi key; returns array of cats. second argument is for choosing type/api method)
 
 - purge eslint or bother to setup .env devDependencies etc.
+- setup travis (ie6 / node 0.10.48 tests ? what about Netscape ?)
