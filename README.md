@@ -20,6 +20,7 @@ tfaker.fullname()
 - lastname works
 - fullname works
 - email works
+
 - image (need datamining / api)
 
 - country works
@@ -34,11 +35,11 @@ tfaker.fullname()
 - paragraph (need datamining)
 
 - array (need datamining)
-- object (^)
+- object (cf array)
 
 
 - number (class that have several methods, some that could take args)
-- 
+
 - placekitten ( 0 arg returns a square default, 1 args is square x * x, 2 args is x * y rectangle)
 - catapi (min 1 argument: catapi key; returns array of cats. second argument is for choosing type/api method)
 
