@@ -14,19 +14,19 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 The `./content` directory contains files named after the method calling them. Simply insert new values to any method by editing the related file in the `./content` directory.
 
 ## Methods : 
-- firstname() `// output => "Aegon"`
-- lastname() `// output => "Targaryen"`
-- fullname() `// output => "Visenya Targaryen"`
-- email() `// output => "dragonchan35@dragonstone.wst"`
+- tfaker.firstname() `// output => "Aegon"`
+- tfaker.lastname() `// output => "Targaryen"`
+- tfaker.fullname() `// output => "Visenya Targaryen"`
+- tfaker.email() `// output => "dragonchan35@dragonstone.wst"`
 
-- country() `// output => "Westeros"`
-- region() `// output => "The Red Waste"`
+- tfaker.country() `// output => "Westeros"`
+- tfaker.region() `// output => "The Red Waste"`
 
-- realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+- tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 
-- placekitten() `// generate 100 * 100px kittens thanks to placekitten`
-- placekitten(width) `// if W is type integer, generate W * W px kittens`
-- placekitten(width, height) `// if W and H are type integers, generate W * H px kittens`
+- tfaker.placekitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
+- tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`
+- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/width/height"`
 
 ##### todo: 
 - image (need cautious datamining)
@@ -43,7 +43,7 @@ The `./content` directory contains files named after the method calling them. Si
 - setup travis (once testing becomes useless uwu)
 
 ### Credits
-- [faker.js][1] obviously as the main inspiration source. This library is awesome and for production purposes you should definitely use it instead of my hobby project.
+- [faker.js][1] obviously as the main inspiration source. Excellent library and for production purposes you should definitely use it instead of my hobby project.
 - [Dany][2].
 - [placekitten.com][3] for their awesome service.
 - [jeffreylancaster][4] - I intend to get the most out of it and ping you when it's worth.
