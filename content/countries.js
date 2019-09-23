@@ -1,3 +1,5 @@
 module["exports"] = [
-  "test"
+  "Westeros",
+  "Essos",
+  "Sothoryos"
 ];

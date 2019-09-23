@@ -5,9 +5,10 @@ function Tfaker (){
   self.fullname = require("./fullname.js");
   self.email = require("./email.js");
 
+  self.country = require("./country.js");
   self.region = require("./region.js");
 
-  self.realdate = require("./realdate");
+  self.realdate = require("./realdate.js");
 
   return this;
 }
