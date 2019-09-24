@@ -2,7 +2,7 @@
 ## Faking Targaryen data has never been easier. 
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 ### !!! WORK IN PROGRESS !!!
-##### Compatibility:
+### Compatibility:
 - Node >= 0.10.48
 
 ## Import : 
@@ -11,7 +11,7 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)   
 ```
 ## EZ Tweaks :
-Files in `./content` contains the arrays that most methods randomize. To add your own content, just edit the array named after the method.
+Each file in `./content` is named after the method calling it, and is basically an array of content. To customize any of these methods, just drop your stuff into the array, respecting its format.
 
 # Methods :
 ### Targaryen :  
@@ -25,7 +25,7 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 ### Kittens: 
 - tfaker.placekitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 - tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`
-- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/
+- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/`
 ### Utils :
 - tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 width/height"`
@@ -42,7 +42,7 @@ width/height"`
 - object (cf array)
 - number (class having methods having args)
 - catapi (min 1 argument: catapi key; returns array of cats. second argument to choose type/api method)
-- work on browser compatibility going backwards
+- work on browser compatibility , start ie9 going backwards (setup stable xp vm for automated tests?)
 - purge eslint or bother to setup .env devDependencies etc., optimize etc
 
 #### Why IE6/Netscape and not `mjs` in this day and age ?
