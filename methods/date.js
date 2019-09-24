@@ -1,3 +1,4 @@
+/*
 function gmod(n,m){
   return ((n%m)+m)%m;
 }
@@ -98,3 +99,8 @@ function writeIslamicDate(adjustment) {
 console.log(new Array(new Date));
 console.log(kuwaiticalendar());
 console.log(writeIslamicDate());
+
+*/
+
+// source : https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
+// Alhamdulillah. Not yet on the credits bc not sure yet I'll use it
