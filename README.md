@@ -30,8 +30,8 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 
 ![Targaryen](https://i.ibb.co/5Fvv4xb/targ-Transparent.png)
 
-##### todo: 
-- TESTS (it was at the end of the list where it made no sense)
+#### todo: 
+- TESTS (next step, mandatory§§§)
 - image (need cautious datamining)
 - city
 - date (not settled between pure lunar or hybrid);
@@ -45,14 +45,16 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - purge eslint or bother to setup .env devDependencies etc.
 - build (needed to test browser support ; objective is to support IE6/ Netscape2.01 but I need to look deeper into ECMAScript1 before saying it will even be feasible)
 
-##### Why do you need IE6 and Netscape support ? Why not `mjs` in this day and age ?
+#### Why do you need IE6 and Netscape support ? Why not `mjs` in this day and age ?
 Two reasons: first I've learned JS with ES6 syntax, which I miss tbh, but in reality you can't just ES6 syntax into your backend and most node production apps run on very old (stable?) node versions. Also the very limited syntax of old actually makes me to do researches and learn stuff about programming which is good.
 The second reason is because technology and society as a whole should not punish the few individuals taking enough care of their stuff to still run IE6 / Netscape in this day and age. Sure they hurt capitalism and "growth" for not renewing their hardware every 1.5year, and they hurt developers egos because they DON'T want your awesome patch that took you weeks to wrote but solves all known bugs. But I am fond of them, can't help it <3.
 
-##### Have you heard about Babeljs?
+#### Have you heard about Babeljs?
 Babel is an awesome, one of a kind library.
 ![Jon Snow](https://i.ibb.co/LSGFXR2/dunwanit.png)
+#### Want to open an issue ?
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
+#### Want to open a PR ?
 ![DanyYay](https://i.ibb.co/R9dYJDr/danyGood.jpg)
 ### Credits
 - [faker.js][1] obviously as the main inspiration source. Excellent library and for production purposes you should definitely use it instead of my hobby project.
