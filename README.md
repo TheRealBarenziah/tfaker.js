@@ -7,13 +7,13 @@
 
 ## Import : 
 ```
-var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)   
 var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/index.js)
+var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)   
 ```
 ## EZ Tweaks :
 Files in `./content` contains the arrays that most methods randomize. To add your own content, just edit the array named after the method.
 
-## Methods : 
+## Targaryen ethods : 
 - tfaker.firstname() `// output => "Aegon"`
 - tfaker.lastname() `// output => "Targaryen"`
 - tfaker.fullname() `// output => "Visenya Targaryen"`
@@ -21,12 +21,13 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 
 - tfaker.country() `// output => "Westeros"`
 - tfaker.region() `// output => "The Red Waste"`
-
-- tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
-
+## Kittens methods: 
 - tfaker.placekitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 - tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`
-- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/width/height"`
+- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/
+## Utility methods :
+- tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+width/height"`
 
 ![Targaryen](https://i.ibb.co/5Fvv4xb/targ-Transparent.png)
 
@@ -45,12 +46,11 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - purge eslint or bother to setup .env devDependencies etc.
 - build (needed to test browser support ; objective is to support IE6/ Netscape2.01 but I need to look deeper into ECMAScript1 before saying it will even be feasible)
 
-#### Why do you need IE6 and Netscape support ? Why not `mjs` in this day and age ?
-Two reasons: first I've learned JS with ES6 syntax, which I miss tbh, but in reality you can't just ES6 syntax into your backend and most node production apps run on very old (stable?) node versions. Also the very limited syntax of old actually makes me do researches and learn stuff about programming.
-Second reason is because technology and society as a whole should not punish the few individuals taking enough care of their stuff to still run IE6 / Netscape nowadays. Sure they hurt capitalism and "growth" for not renewing their hardware every 1.5year, and they hurt developers egos because they DON'T want your awesome patch that took you weeks to wrote but solves all known bugs. But I am fond of them, can't help it <3 #neverW10
+#### Why support IE6 and Netscape and not `mjs` in this day and age ?
+I learned JS with ES6 syntax (which I very like), only to realize that you usually can't afford ES6 into your backend, especially in production. It's actually not that bad: the limited ways of old makes me do researches and learn plenty good stuff about Js. Try to support of the oldest stuff possible should bring even more fun and knowledge.
 
 #### Have you heard about Babeljs?
-Babel is an awesome, one of a kind library.
+Babel is an awesome, one of a kind library. Big up to these boys
 ![Jon Snow](https://i.ibb.co/LSGFXR2/dunwanit.png)
 #### Want to open an issue ?
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
