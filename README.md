@@ -29,6 +29,7 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/width/height"`
 
 ##### todo: 
+- TESTS (it was at the end of the list where it made no sense)
 - image (need cautious datamining)
 - city
 - date (not settled between pure lunar or hybrid);
@@ -40,13 +41,12 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - number (class having methods having args)
 - catapi (min 1 argument: catapi key; returns array of cats. second argument to choose type/api method)
 - purge eslint or bother to setup .env devDependencies etc.
-- setup travis (once testing becomes useless uwu)
 
 ### Credits
 - [faker.js][1] obviously as the main inspiration source. Excellent library and for production purposes you should definitely use it instead of my hobby project.
 - [Dany][2].
 - [placekitten.com][3] for their awesome service.
-- [jeffreylancaster][4] - I intend to get the most out of it and ping you when it's worth.
+- [jeffreylancaster][4] - I intend to get the most out of it and ping you when it is worth.
 
 [1]: https://github.com/marak/Faker.js/
 [2]: https://www.instagram.com/emilia_clarke/
