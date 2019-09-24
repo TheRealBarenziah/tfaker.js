@@ -28,6 +28,8 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`
 - tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/width/height"`
 
+![Targaryen](https://i.ibb.co/5Fvv4xb/targ-Transparent.png)
+
 ##### todo: 
 - TESTS (it was at the end of the list where it made no sense)
 - image (need cautious datamining)
@@ -49,10 +51,9 @@ The second reason is because technology and society as a whole should not punish
 
 ##### Have you heard about Babeljs?
 Babel is an awesome, one of a kind library.
-![Jon Snow](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
+![Jon Snow](https://i.ibb.co/LSGFXR2/dunwanit.png)
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
 ![DanyYay](https://i.ibb.co/R9dYJDr/danyGood.jpg)
-
 ### Credits
 - [faker.js][1] obviously as the main inspiration source. Excellent library and for production purposes you should definitely use it instead of my hobby project.
 - [Dany][2].
