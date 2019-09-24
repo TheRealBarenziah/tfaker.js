@@ -25,12 +25,12 @@ Each file in `./content` is named after the method calling it, and is basically 
 ### Kittens: 
 - tfaker.placekitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 - tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`
-- tfaker.placekitten(width, height) `// display width * height px kittens. output=> "http://placekitten.com/`
+- tfaker.placekitten(width, height) `// width * height px kittens. output=> "http://placekitten.com/width/height`
 ### Utils :
 - tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 width/height"`
 
-#### todo: 
+#### incoming: 
 - TESTS (next step, mandatory§§§)
 - image (need cautious datamining)
 - city
