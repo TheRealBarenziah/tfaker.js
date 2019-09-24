@@ -11,7 +11,7 @@ var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)
 var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/index.js)
 ```
 ## EZ Tweaks :
-The `./content` directory contains files named after the method calling them. Simply insert new values to any method by editing the related file in the `./content` directory.
+Files in `./content` contains the arrays that most methods randomize. To add your own content, just edit the array named after the method.
 
 ## Methods : 
 - tfaker.firstname() `// output => "Aegon"`
