@@ -1,3 +1,4 @@
+"use strict";
 var assert = require("assert");
 var lastName = require("../methods/lastName.js");
 var lastname = require("../content/lastname.js");
