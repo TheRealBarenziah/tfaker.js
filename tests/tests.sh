@@ -1,3 +1,3 @@
 #!/bin/bash
-node firstName.js
-node lastName.js
+node ./tests/firstName.js
+node ./tests/lastName.js

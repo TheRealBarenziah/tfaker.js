@@ -4,7 +4,7 @@
   "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
   "main": "index.js",
   "scripts": {
-    "test": "chmod +x ./tests/tests.sh",
+    "test": "chmod +x ./tests/tests.sh && ./tests/tests.sh",
     "lint": "./node_modules/.bin/eslint --color . --ext .js,.jsx",
     "lint:fix": "./node_modules/.bin/eslint --fix . --ext .js,.jsx"
   },
@@ -12,8 +12,5 @@
     "tfaker"
   ],
   "author": "TheRealBarenziah",
-  "license": "TARGARYEN_UNLICENSE",
-  "dependencies": {
-    "eslint": "^6.4.0"
-  }
+  "license": "TARGARYEN_UNLICENSE"
 }

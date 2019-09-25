@@ -7,4 +7,4 @@ assert.strictEqual(typeof lastName, "function");
 assert.strictEqual(typeof lastName(), "string");
 assert.strictEqual(lastName(), lastname);
 assert.notStrictEqual(lastName(), "Blackfyre");
-// Blackfyre supporters are invited to fork </3
+// Blackfyre supporting === fork
