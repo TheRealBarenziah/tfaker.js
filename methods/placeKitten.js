@@ -1,6 +1,6 @@
 var url = "http://placekitten.com/";
 
-module.exports = exports = function placekitten(width, height) {
+module.exports = exports = function placeKitten(width, height) {
   if ((width === undefined) && (height === undefined)) {
     return url + "100/100";
   }

@@ -1,4 +1,4 @@
-module.exports = exports = function realdate () {
+module.exports = exports = function realDate () {
   var newDate = new Date();
 
   var numberOfDaysBack = Math.floor(Math.random() * 36159) + 1;
