@@ -2,8 +2,9 @@
 ## Faking Targaryen data has never been easier. 
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 ### !!! WORK IN PROGRESS !!!
+[![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
 ### Compatibility:
-- Node >= 0.10.48
+- Node >= 0.10.48 (for `yarn test` 4.0 is needed, but by hand `node ./tests/test.js` runs just fine)
 
 ## Import : 
 ```

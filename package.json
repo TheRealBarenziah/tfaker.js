@@ -4,7 +4,7 @@
   "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'hello'",
+    "test": "chmod +x ./tests/tests.sh",
     "lint": "./node_modules/.bin/eslint --color . --ext .js,.jsx",
     "lint:fix": "./node_modules/.bin/eslint --fix . --ext .js,.jsx"
   },
