@@ -18,7 +18,7 @@ module.exports = exports = function email () {
   };
 
   if ( ( 0 < random ) && ( random <= 25 ) ) {
-    return "xXx_" + haxzor(randomWord) + Math.floor(random / 10) + "_xXx" + randomDomain;
+    return "xXx_" + haxzor(randomWord) + Math.floor((random / 10) + 2) + "_xXx" + randomDomain;
   }
   if ( ( 25 < random ) && ( random <= 50 ) ) {
     return randomWord + "chan" + random + randomDomain;
