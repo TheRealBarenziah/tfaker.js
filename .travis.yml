@@ -7,4 +7,4 @@ cache:
 git:
   depth: false
 script:
-  -node ./tests/lastName.js
+  -npm run test
