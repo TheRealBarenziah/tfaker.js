@@ -12,10 +12,10 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)   
 ```
 ## EZ Tweaks :
-Each file in `./content` is named after the method calling it, and is basically an array of content. To customize any of these methods, just drop your stuff into the array, respecting its format.
+Each file in `./content` is named after the method calling it and is an array of content. To customize those methods, just drop your stuff into the array.
 
 # Methods :
-### Targaryen :  
+### Targaryens :  
 - tfaker.firstName() `// output => "Aegon"`
 - tfaker.lastName() `// output => "Targaryen"`
 - tfaker.fullName() `// output => "Visenya Targaryen"`
@@ -46,7 +46,7 @@ Each file in `./content` is named after the method calling it, and is basically 
 - purge eslint or bother to setup .env devDependencies, optimize etc
 
 #### Why IE6/Netscape  ?
-I learned JS with ES6 syntax (which I very like), only to realize that you usually can't afford ES6 into your backend especially in production. It's actually not that bad: the limited ways of old have me do researches and learn plenty of good stuff about JS. And I feel like supporting the oldest stuff possible is a path to more fun and knowledge. I know nothing, just like the guy below.
+I learned JS with ES6 syntax (which I very like), only to realize that you usually can't afford ES6 into your backend especially in production. It's actually not that bad: the limited ways of old have me do researches and learn plenty of good stuff about JS and stuff. Imo supporting the oldest stuff possible is the path to even more fun and knowledge. I know nothing, just like the guy below.
 
 #### Have you heard about Babeljs?
 Babel is an awesome, one of a kind library. Big up to them

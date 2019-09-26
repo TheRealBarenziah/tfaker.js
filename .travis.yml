@@ -6,4 +6,4 @@ cache:
   - node_modules
 git:
   depth: false
-script: npm run test
+script: node ./tests/index.js
