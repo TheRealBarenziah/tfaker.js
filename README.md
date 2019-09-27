@@ -22,7 +22,7 @@ Files in `./content` contains the arrays that most methods randomize. To add you
 - tfaker.country() `// output => "Westeros"`
 - tfaker.region() `// output => "The Red Waste"`
 
-- tfaker.realdate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+- tfaker.realdate() `// new Date() set somewhere in last century. output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 
 - tfaker.placekitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 - tfaker.placekitten(width) `// width is type integer; display w * w px kittens thanks to placekitten`

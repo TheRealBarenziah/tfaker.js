@@ -12,8 +12,5 @@
     "tfaker"
   ],
   "author": "TheRealBarenziah",
-  "license": "TARGARYEN_UNLICENSE",
-  "dependencies": {
-    "eslint": "^6.4.0"
-  }
+  "license": "TARGARYEN_UNLICENSE"
 }
