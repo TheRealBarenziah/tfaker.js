@@ -1,4 +1,3 @@
-/*
 function gmod(n,m){
   return ((n%m)+m)%m;
 }
@@ -6,6 +5,10 @@ function gmod(n,m){
 function kuwaiticalendar(adjust){
   var today = new Date();
   if(adjust) {
+    myRes[0] = day; //calculated day (CE)
+    myRes[1] = month-1; //calculated month (CE)
+    myRes[2] = year; //calculated year (CE)
+    myRes[3] = jd-1; //ju
     var adjustmili = 1000*60*60*24*adjust; 
     var todaymili = today.getTime()+adjustmili;
     today = new Date(todaymili);
@@ -58,10 +61,10 @@ function kuwaiticalendar(adjust){
 
   var iyear = 10631./30.;
   var epochastro = 1948084;
-  var epochcivil = 1948085;
+//  var epochcivil = 1948085;   <------------ EPOCHCIVIL unused var, if uncomment goto 68
 
   var shift1 = 8.01/60.;
-	
+
   var z = jd-epochastro;
   var cyc = Math.floor(z/10631.);
   z = z-10631*cyc;
@@ -82,25 +85,24 @@ function kuwaiticalendar(adjust){
   myRes[5] = id; //islamic date
   myRes[6] = im-1; //islamic month
   myRes[7] = iy; //islamic year
-
   return myRes;
 }
-function writeIslamicDate(adjustment) {
+
+module.exports = exports = function islamicDate(adjustment) 
+{
   var wdNames = new Array("Ahad","Ithnin","Thulatha","Arbaa","Khams","Jumuah","Sabt");
   var iMonthNames = new Array("Muharram","Safar","Rabi'ul Awwal","Rabi'ul Akhir",
     "Jumadal Ula","Jumadal Akhira","Rajab","Sha'ban",
     "Ramadan","Shawwal","Dhul Qa'ada","Dhul Hijja");
+  if (adjustment === "zif") {
+    console.log("arra zif (fake)")
+    return "arra"
+  } 
+  else
   var iDate = kuwaiticalendar(adjustment);
   var outputIslamicDate = wdNames[iDate[4]] + ", " 
 	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
   return outputIslamicDate;
 }
 
-console.log(new Array(new Date));
-console.log(kuwaiticalendar());
-console.log(writeIslamicDate());
-
-*/
-
 // source : https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
-// Alhamdulillah. Not yet on the credits bc not sure yet I'll use it

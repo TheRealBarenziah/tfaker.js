@@ -7,9 +7,10 @@ function Tfaker (){
   self.country = require("./country.js");
   self.region = require("./region.js");
 
-  self.realDate = require("./realDate.js");
-
   self.placeKitten = require("./placeKitten.js");
+
+  self.realDate = require("./realDate.js");
+  self.islamicDate = require("./islamicDate.js");
 
   return this;
 }
