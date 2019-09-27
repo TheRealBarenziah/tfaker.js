@@ -1,10 +1,10 @@
 {
   "name": "tfaker",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
   "main": "index.js",
   "scripts": {
-    "test": "chmod +x ./tests/tests.sh && ./tests/tests.sh"
+    "test": "node ./tests/index.js"
   },
   "keywords": [
     "tfaker"
