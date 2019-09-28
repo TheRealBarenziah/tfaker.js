@@ -5,6 +5,7 @@ function Tfaker (){
   self.fullName = require("./fullName.js");
   self.email = require("./email.js");
   self.country = require("./country.js");
+  self.city = require("./city.js");
   self.region = require("./region.js");
 
   self.placeKitten = require("./placeKitten.js");

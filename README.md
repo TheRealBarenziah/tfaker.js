@@ -18,40 +18,41 @@ Each file in `./content` is named after the method calling it, and is basically 
 
 # Methods :
 ### Targaryens :  
-- tfaker.firstName() `// output => "Aegon"`
+- tfaker.firstName() `// random output => "Aegon"`
 - tfaker.lastName() `// output => "Targaryen"`
-- tfaker.fullName() `// output => "Visenya Targaryen"`
-- tfaker.email() `// output => "dragonchan35@dragonstone.wst"`
-- tfaker.country() `// output => "Westeros"`
-- tfaker.region() `// output => "The Red Waste"`
+- tfaker.fullName() `// random output => "Visenya Targaryen"`
+- tfaker.email() `// random output => "dragonchan35@dragonstone.wst"`
+- tfaker.country() `// random output => "Westeros"`
+- tfaker.region() `// random output => "The Red Waste"`
+- tfaker.city() `// random output => "Braavos"`
 ### Kittens: 
 - tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 Note: this method can also use one or two Integer arguments, translating into width & height in pixels:
 ```
-tfaker.placeKitten(width); // will make a square: tfaker.placeKitten(420); => "http://placekitten.com/420/420"
-- tfaker.placeKitten(width, height); // width * height px kittens => "http://placekitten.com/width/height
+tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com/420/420"
+tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.com/800/600"
 ```
 ### Utils :
 - tfaker.realDate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 - tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
-Note: this method accepts either an *adjustment* **Integer** parameter to add or remove days, or a "zif" or "fake" **string** parameter to generate fake past dates:
+Note: this method accepts either an *adjustment* **Integer** parameter to add or remove days, or a "zif" or "fake" **string** parameter:
 ```
 tfaker.islamicDate(1); // returns today +1 day => "Jumuah, 29 Muharram 1441 AH".
 tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt, 4 Jumadal Ula 1384 AH"
 ```
-*Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have ([the Valyrian Freehold was very tolerant of other religions][7]).*
+*Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
+___
 #### incoming: 
 - TESTS (mandatory§§§)
 - image (need cautious datamining)
-- city
 - date (not settled between pure lunar or hybrid);
 - quote (need datamining)
 - phrase (need datamining)
 - paragraph (need datamining)
 - array (need datamining)
 - object (cf array)
-- number (class having methods having args)
-- catapi (min 1 argument: catapi key; returns array of cats. second argument to choose type/api method)
+- number (having methods having args)
+- catapi (samples of array, objects & images fetched on catapi)
 - work on browser compatibility , start ie9 going backwards (setup stable xp vm for automated tests?). Also Netscape
 - purge eslint or bother to setup .env devDependencies, optimize etc
 
@@ -69,8 +70,8 @@ I learned JS with ES6 syntax (which I love), only to realize that you usually ca
 - [faker.js][1] obviously the main inspiration source. Excellent library that I intend to continue to use in harmony with mine.
 - [Dany][2] for the `"bEsT sEaSoN eVEr"` and also best eyebrows.
 - [placekitten.com][3] for the awesome free service. Click 'em
-- [jeffreylancaster][4] - I intend to try getting the most out of it and ping you when worth.
-- [al-habib.info][6] -  I've liked your function for being both concise and digestible.
+- [jeffreylancaster][4] - This goldmine helped me to parse stuff like cities & regions. Thank you !
+- [al-habib.info][6] -  I liked your function for being both concise and digestible.
 
 [1]: https://github.com/marak/Faker.js/
 [2]: https://www.instagram.com/emilia_clarke/
