@@ -27,13 +27,19 @@ Each file in `./content` is named after the method calling it, and is basically 
 ### Kittens: 
 - tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 Note: this method can also use one or two Integer arguments, translating into width & height in pixels:
-tfaker.placeKitten(width) `// will make a square. F.e tfaker.placeKitten(420); => "http://placekitten.com/420/420"`
-- tfaker.placeKitten(width, height) `// width * height px kittens => "http://placekitten.com/width/height`
+```
+tfaker.placeKitten(width); // will make a square: tfaker.placeKitten(420); => "http://placekitten.com/420/420"
+- tfaker.placeKitten(width, height); // width * height px kittens => "http://placekitten.com/width/height
+```
 ### Utils :
 - tfaker.realDate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
-- tfaker.islamicDate() `// output => "Jumuah, 28 Muharram 1441 AH"`
-Note: this method can takes an *adjustment* Integer as parameter: `tfaker.islamicDate(1); // => "Jumuah, 29 Muharram 1441 AH"`.
-Stumbled upon [this function][6] searching for a lunar calendar that could apply to Westeros. I've found it was fairly annoying to get a lunar/islamic date in JavaScript, and since faker.js doesn't have it atm, I've thought it would make a nice addition ("[the Valyrian Freehold was very tolerant of other religions][7]").
+- tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
+Note: this method accepts either an *adjustment* **Integer** parameter to add or remove days, or a "zif" or "fake" **string** parameter to generate fake past dates:
+```
+tfaker.islamicDate(1); // returns today +1 day => "Jumuah, 29 Muharram 1441 AH".
+tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt, 4 Jumadal Ula 1384 AH"
+```
+*Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have ([the Valyrian Freehold was very tolerant of other religions][7]).*
 #### incoming: 
 - TESTS (mandatory§§§)
 - image (need cautious datamining)
@@ -53,7 +59,7 @@ Stumbled upon [this function][6] searching for a lunar calendar that could apply
 I learned JS with ES6 syntax (which I love), only to realize that you usually can't afford ES6 into your backend. It's actually not that bad: the limited ways of old have me do researches and learn plenty of good stuff about JS and computers. Imo supporting the oldest browsers is the path to even more fun and knowledge. For I know nothing, just like the guy below.
 
 #### Have you heard about Babeljs?
-[Babeljs][5] is an awesome, one of a kind library. Kinda like the Throne.
+[Babeljs][5] is an awesome, one of a kind library. *thumbs up*
 ![Jon Snow](https://i.ibb.co/LSGFXR2/dunwanit.png)
 #### Issues (jk please do)
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
@@ -64,7 +70,7 @@ I learned JS with ES6 syntax (which I love), only to realize that you usually ca
 - [Dany][2] for the `"bEsT sEaSoN eVEr"` and also best eyebrows.
 - [placekitten.com][3] for the awesome free service. Click 'em
 - [jeffreylancaster][4] - I intend to try getting the most out of it and ping you when worth.
-- [al-habib.info][6] -  I've liked your function for being both concise and comprehensible. 
+- [al-habib.info][6] -  I've liked your function for being both concise and digestible.
 
 [1]: https://github.com/marak/Faker.js/
 [2]: https://www.instagram.com/emilia_clarke/
