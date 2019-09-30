@@ -56,7 +56,7 @@ ___
 - purge eslint or bother to setup .env devDependencies, optimize etc
 
 #### Why IE6/Netscape  ?
-I learned JS with ES6 syntax (which I love), only to realize that you usually can't afford ES6 into your backend. It's actually not that bad: the limited ways of old have me do researches and learn plenty of good stuff about JS and computers. Imo supporting the oldest browsers is the path to even more fun and knowledge. For I know nothing, just like the guy below.
+I learned JS with ES6 syntax (which I love), only to realize that you usually can't afford ES6 into your backend. It's actually not that bad: the limited ways of old had me do researches and learn good stuff about JS and IT in general. Imo supporting the oldest browsers is the path to even more fun and knowledge. For I know nothing, just like the guy below.
 
 #### Have you heard about Babeljs?
 [Babeljs][5] is an awesome, one of a kind library * *thumbs up* *
