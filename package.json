@@ -1,14 +1,19 @@
 {
   "name": "tfaker",
   "version": "0.0.1",
-  "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
+  "description": "Lightweight, Targaryen-themed lil' brother of faker.js",
   "main": "index.js",
   "scripts": {
     "test": "node ./tests/index.js"
   },
   "keywords": [
-    "tfaker"
+    "tfaker",
+    "targaryen"
   ],
   "author": "TheRealBarenziah",
-  "license": "TARGARYEN_UNLICENSE"
+  "license": "SEE LICENSE IN TARGARYEN_UNLICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealBarenziah/imgbb-uploader.git"
+  }
 }

@@ -41,22 +41,7 @@ tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt,
 ```
 *Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
 ___
-#### incoming: 
-- TESTS (mandatory§§§)
-- image (need cautious datamining)
-- date (not settled between pure lunar or hybrid);
-- quote (need datamining)
-- phrase (need datamining)
-- paragraph (need datamining)
-- array (need datamining)
-- object (cf array)
-- number (having methods having args)
-- catapi (samples of array, objects & images fetched on catapi)
-- work on browser compatibility , start ie9 going backwards (setup stable xp vm for automated tests?). Also Netscape
-- purge eslint or bother to setup .env devDependencies, optimize etc
-
-#### Why IE6/Netscape  ?
-I learned JS with ES6 syntax (which I love), only to realize that you usually can't afford ES6 into your backend. It's actually not that bad: the limited ways of old had me do researches and learn good stuff about JS and IT in general. Imo supporting the oldest browsers is the path to even more fun and knowledge. For I know nothing, just like the guy below.
+### F.A.Q/
 
 #### Have you heard about Babeljs?
 [Babeljs][5] is an awesome, one of a kind library * *thumbs up* *
@@ -65,6 +50,9 @@ I learned JS with ES6 syntax (which I love), only to realize that you usually ca
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
 #### Pull Requests
 ![DanyYay](https://i.ibb.co/R9dYJDr/danyGood.jpg)
+#### What's next ?
+see `./TODO.md`
+
 ### Credits
 - [faker.js][1] obviously the main inspiration source. Excellent library that I intend to continue to use in harmony with mine.
 - [Dany][2] for the `"bEsT sEaSoN eVEr"` and also best eyebrows.
