@@ -41,7 +41,7 @@ tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt,
 ```
 *Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
 ___
-### F.A.Q/
+### F.A.Q
 
 #### Have you heard about Babeljs?
 [Babeljs][5] is an awesome, one of a kind library * *thumbs up* *
@@ -51,7 +51,7 @@ ___
 #### Pull Requests
 ![DanyYay](https://i.ibb.co/R9dYJDr/danyGood.jpg)
 #### What's next ?
-see `./TODO.md`
+`./TODO.md`
 
 ### Credits
 - [faker.js][1] obviously the main inspiration source. Excellent library that I intend to continue to use in harmony with mine.
