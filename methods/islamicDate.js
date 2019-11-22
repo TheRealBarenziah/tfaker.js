@@ -112,6 +112,7 @@ var correct = function (integer) {
   else if (integer === undefined) return 0;
   else return 0;
 }
+/*
 console.log(correct(undefined) + " undefined")
 console.log(correct(0) + " corr 0")
 console.log(correct(1) + " corr 1")
@@ -120,11 +121,9 @@ console.log(correct(8) + " corr 8")
 console.log(correct(10) + " corr 10")
 console.log(correct(-7) + " corr -7")
 console.log(correct(-10) + " corr -10")
+*/
 
-
-//module.exports = exports = 
-
-function islamicDate(adjustment) {
+module.exports = function islamicDate(adjustment) {
   var wdNames = new Array("Ahad", "Ithnin", "Thulatha", "Arbaa", "Khams", "Jumuah", "Sabt");
   var iMonthNames = new Array("Muharram", "Safar", "Rabi'ul Awwal", "Rabi'ul Akhir",
     "Jumadal Ula", "Jumadal Akhira", "Rajab", "Sha'ban",
