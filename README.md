@@ -4,14 +4,16 @@
 ## WORK IN PROGRESS
 [![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)  
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
-![GitHub repo size](https://img.shields.io/github/repo-size/TheRealBarenziah/tfaker.js)
+![GitHub top language](https://img.shields.io/github/languages/top/TheRealBarenziah/tfaker.js)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
-[![CodeFactor](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js/badge)](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js/badge)](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js)
+[![Node](https://img.shields.io/badge/Node%20%3E%3D-0.10.48-brightgreen)](https://nodejs.org/ca/blog/release/v0.10.48/)
 ### Zero dependencies
 ## Compatibility
--   **Node >= 0.10.48**  
-*NB: [node.green][8] is lying about 0.10.48 not supporting `parseInt()`. If you're doubting, please `nvm use 0.10.48` and check for yourself.*
+**Node >= 0.10.48**  
+*NB: [node.green][8] lies about 0.10.48 not supporting `parseInt()`. You can check it yourself : `nvm use 0.10.48`.*
 
 ## Import
 ```javascript
@@ -29,13 +31,13 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 -   tfaker.city() `// random output => "Braavos"`
 ### Kittens
 -   tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
-Note: this method can also use one or two **Integer** arguments, translating into *width* & *height* in pixels:
+**NB**: this method can also use one or two **Integer** arguments, translating into *width* & *height* in pixels:
 ```javascript
 tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com/420/420"
 tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.com/800/600"
 ```
 ### Utils
--   tfaker.realDate() `// random past century Date => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+-   tfaker.realDate() `// random Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 -   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
 **NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* / *"fake"* **string** parameter:
 ```javascript
@@ -46,7 +48,7 @@ tfaker.islamicDate("fake"); // works the same
 *Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
 ___
 ## EZ Tweaks
-Each file in `./content` is named after the method calling it and is basically an array of content. You can customize any of those methods simply by dropping your stuff into the array (as long as you respect the format).
+Each file in `./content` is named after the method calling it, and is basically an array of content. You can customize any of those methods simply by dropping your stuff into the array. Just respect data types and you'll be good.
 ___
 ## F.A.Q
 ### Have you heard about Babeljs
@@ -64,7 +66,7 @@ ___
 -   [Dany][2] for the `"bEsT sEaSoN eVEr"` and also best eyebrows.
 -   [placekitten.com][3] for the awesome free service. Click 'em
 -   [jeffreylancaster][4] This goldmine helped me to parse stuff like cities & regions. Thank you !
--   [al-habib.info][6] I liked your function for being both concise and digestible.
+-   [al-habib.info][6] Liked your function for being both concise and digestible.
 
 [1]: https://github.com/marak/Faker.js/
 [2]: https://www.instagram.com/emilia_clarke/
