@@ -5,6 +5,15 @@ var gmod = function(n, m) {
 function kuwaiticalendar(adjust) {
   var myRes = new Array(8);
   var today = new Date();
+  var day = today.getDate();
+  var month = today.getMonth();
+  var year = today.getFullYear();
+  var jd =
+    Math.floor(365.25 * (y + 4716)) +
+    Math.floor(30.6001 * (m + 1)) +
+    day +
+    b -
+    1524;
   if (adjust && typeof adjust === "number") {
     myRes[0] = day; //calculated day (CE)
     myRes[1] = month - 1; //calculated month (CE)
@@ -14,9 +23,7 @@ function kuwaiticalendar(adjust) {
     var todaymili = today.getTime() + adjustmili;
     today = new Date(todaymili);
   }
-  var day = today.getDate();
-  var month = today.getMonth();
-  var year = today.getFullYear();
+
   var m = month + 1;
   var y = year;
   if (m < 3) {
@@ -35,16 +42,11 @@ function kuwaiticalendar(adjust) {
     }
     if (m === 10) {
       b = 0;
-      if (day > 4) b = -10;
+      if (day > 4) {
+        b = -10;
+      }
     }
   }
-
-  var jd =
-    Math.floor(365.25 * (y + 4716)) +
-    Math.floor(30.6001 * (m + 1)) +
-    day +
-    b -
-    1524;
 
   b = 0;
   if (jd > 2299160) {
@@ -138,8 +140,7 @@ module.exports = function islamicDate(adjustment) {
       randomPast[7] +
       " AH";
     return fakeIDate;
-  } 
-  else {
+  } else {
     var iDate = kuwaiticalendar(adjustment);
     var outputIslamicDate =
       wdNames[iDate[4]] +

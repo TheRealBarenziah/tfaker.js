@@ -7,6 +7,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
 [![CodeFactor](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js/badge)](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
 ### Zero dependencies
 ## Compatibility
 -   **Node >= 0.10.48**  
@@ -27,14 +28,14 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 -   tfaker.region() `// random output => "The Red Waste"`
 -   tfaker.city() `// random output => "Braavos"`
 ### Kittens
--  tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
+-   tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
 Note: this method can also use one or two **Integer** arguments, translating into *width* & *height* in pixels:
 ```javascript
 tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com/420/420"
 tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.com/800/600"
 ```
 ### Utils
--   tfaker.realDate() `// like new Date(last century). output => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+-   tfaker.realDate() `// shortcut for new Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 -   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
 **NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* or *"fake"* **string** parameter:
 ```javascript

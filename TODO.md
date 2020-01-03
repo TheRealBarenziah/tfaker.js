@@ -1,12 +1,12 @@
--  TESTS (mandatory§§§)
--  image (need cautious datamining)
--  date (not settled between pure lunar or hybrid);
--  quote (need datamining)
--  phrase (need datamining)
--  paragraph (need datamining)
--  array (need datamining)
--  object (cf array)
--  number (having methods having args)
--  catapi (samples of array, objects & images fetched on catapi)
--  work on browser compatibility , start ie9 going backwards (setup stable xp vm for automated tests?). Also Netscape
--  purge eslint or bother to setup .env devDependencies, optimize etc
+-   TESTS (mandatory§§§)
+-   image (need cautious datamining)
+-   date (not settled between pure lunar or hybrid);
+-   quote (need datamining)
+-   phrase (need datamining)
+-   paragraph (need datamining)
+-   array (need datamining)
+-   object (cf array)
+-   number (having methods having args)
+-   catapi (samples of array, objects & images fetched on catapi)
+-   work on browser compatibility , start ie9 going backwards (setup stable xp vm for automated tests?). Also Netscape
+-   purge eslint or bother to setup .env devDependencies, optimize etc

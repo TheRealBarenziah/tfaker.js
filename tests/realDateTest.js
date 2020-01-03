@@ -5,5 +5,7 @@ module.exports = exports = function realDateTest () {
   assert.strictEqual(typeof realDate(), "object");
   var a = realDate();
   var b = new Date();
-  if (a === b) throw new Error;
+  if (a === b) {
+    throw new Error;
+  }
 };

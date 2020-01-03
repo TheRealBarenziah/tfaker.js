@@ -10,9 +10,11 @@ module.exports = exports = function email () {
     var charArray = [];
     for (var i = 0; i < string.length; i++){
       if (i % 2 === 0) {
-        charArray.push(string[parseInt(i)].toUpperCase());
+        charArray.push(string[parseInt(i, 10)].toUpperCase());
       }
-      else charArray.push(string[parseInt(i)]);
+      else {
+        charArray.push(string[parseInt(i, 10)]);
+      }
     }
     return charArray.join("");
   };
@@ -24,7 +26,9 @@ module.exports = exports = function email () {
     return randomWord + "chan" + random + randomDomain;
   }
   if ( ( 50 < random ) && ( random <= 75 ) ) {
-    return "uwu" + randomWord + "qt" + Math.floor(random / 10) + "uwu" + randomDomain;
+    return "uwu" + randomWord + "qt" + Math.floor(random / 10) + randomDomain;
   }
-  else return randomWord + random + randomDomain;
+  else {
+    return randomWord + random + randomDomain;
+  }
 };

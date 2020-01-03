@@ -56,4 +56,4 @@ module["exports"] = [
   "Lotus Port",
   "Tall Trees Town",
   "Moat Cailin",
-  "Last Hearth" ]
+  "Last Hearth" ];
