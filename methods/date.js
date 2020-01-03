@@ -2,4 +2,4 @@
 // 0AC : Aegon's coronation in Oldtown
 // 284AC : Birth of Daenerys
 
-let yearZero = 114;
+// let yearZero = 114;

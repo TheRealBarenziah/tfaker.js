@@ -2,10 +2,15 @@
 ## Faking Targaryen data has never been easier. 
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 ## !!! WORK IN PROGRESS !!!
+[![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheRealBarenziah/tfaker.js)
+[![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
+![NPM](https://img.shields.io/npm/l/tfaker)
+
 ### Zero dependencies
 ### Compatibility:
-- Node >= 0.10.48
+- **Node >= 0.10.48**
 
 ## Import : 
 ```
@@ -13,7 +18,7 @@ var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)
 var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/index.js)
 ```
 ## EZ Tweaks :
-Each file in `./content` is named after the method calling it, and is basically an array of content. You can customize any of those methods by simply dropping your stuff into the array (still have to respect the format).
+Each file in `./content` is named after the method calling it and is basically an array of content. You can customize any of those methods simply by dropping your stuff into the array (as long as you respect the format).
 
 # Methods :
 ### Targaryens :  
@@ -46,7 +51,7 @@ ___
 #### Have you heard about Babeljs?
 [Babeljs][5] is an awesome, one of a kind library * *thumbs up* *
 ![Jon Snow](https://i.ibb.co/LSGFXR2/dunwanit.png)
-#### Issues (jk please do)
+#### Issues (jk! if anything PLEASE DO)
 ![DanyNope](https://i.ibb.co/4Y2wP6Y/danuBad.jpg)
 #### Pull Requests
 ![DanyYay](https://i.ibb.co/R9dYJDr/danyGood.jpg)

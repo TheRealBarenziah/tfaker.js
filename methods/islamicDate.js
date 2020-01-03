@@ -87,42 +87,6 @@ function kuwaiticalendar(adjust) {
   return myRes;
 }
 
-var correct = function (integer) {
-  if (typeof integer === "number") {
-    var intModulo = integer % 7;
-    if (intModulo < 0) {
-      console.log(intModulo + " negative correction")
-    }
-    else if (intModulo > 0 ) {
-      console.log(intModulo + " positive correction")
-    }
-    else console.log(intModulo + " no correction")
-    /*
-    switch (intModulo) {
-      case 0: return 1;
-      case 1: return 1;
-      case 2: return 1;
-      case 3: return 1;
-      case 4: return 1;
-      case 5: return 1;
-      case 6: return 1;
-      default: return integer
-      */
-    }
-  else if (integer === undefined) return 0;
-  else return 0;
-}
-/*
-console.log(correct(undefined) + " undefined")
-console.log(correct(0) + " corr 0")
-console.log(correct(1) + " corr 1")
-console.log(correct(7) + " corr 7")
-console.log(correct(8) + " corr 8")
-console.log(correct(10) + " corr 10")
-console.log(correct(-7) + " corr -7")
-console.log(correct(-10) + " corr -10")
-*/
-
 module.exports = function islamicDate(adjustment) {
   var wdNames = new Array("Ahad", "Ithnin", "Thulatha", "Arbaa", "Khams", "Jumuah", "Sabt");
   var iMonthNames = new Array("Muharram", "Safar", "Rabi'ul Awwal", "Rabi'ul Akhir",
@@ -138,18 +102,9 @@ module.exports = function islamicDate(adjustment) {
 
   else
     var iDate = kuwaiticalendar(adjustment);
-    var realDay = iDate[4];
     var outputIslamicDate = wdNames[iDate[4]] + ", "
     + iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
-  // console.log("real day should be = ", realDay)
-  // console.log("adjustment = ", adjustment)
   return outputIslamicDate;
 }
-/*
-console.log(islamicDate())
-console.log(islamicDate(1)) // output should be Thulatha
-console.log(islamicDate(2)) // ... should be Arbaa
-console.log(islamicDate(3)) // ... should be Khams
-*/
 
 // original source : https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
