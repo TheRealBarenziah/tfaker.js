@@ -1,18 +1,18 @@
 # tfaker.js
 ## Faking Targaryen data has never been easier
 ![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
-## !!! WORK IN PROGRESS !!!
-[![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)
+## WORK IN PROGRESS
+[![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)  
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
 ![GitHub repo size](https://img.shields.io/github/repo-size/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
 ![NPM](https://img.shields.io/npm/l/tfaker)
 [![CodeFactor](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js/badge)](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js)
 
-### Zero dependencies
+## Zero dependencies
 ### Compatibility
 -  **Node >= 0.10.48**  
-*NB: [node.green][8] is lying about 0.10.48 not supporting `parseInt()`. If doubting, please `nvm use 0.10.48` and check for yourself.*
+*NB: [node.green][8] is lying about 0.10.48 not supporting `parseInt()`. If you're doubting, please `nvm use 0.10.48` and check for yourself.*
 
 ## Import
 ```javascript
@@ -63,8 +63,8 @@ ___
 -  [faker.js][1] obviously the main inspiration source. Excellent library that I intend to continue to use in harmony with mine.
 -  [Dany][2] for the `"bEsT sEaSoN eVEr"` and also best eyebrows.
 -  [placekitten.com][3] for the awesome free service. Click 'em
--  [jeffreylancaster][4] - This goldmine helped me to parse stuff like cities & regions. Thank you !
--  [al-habib.info][6] -  I liked your function for being both concise and digestible.
+-  [jeffreylancaster][4] This goldmine helped me to parse stuff like cities & regions. Thank you !
+-  [al-habib.info][6] I liked your function for being both concise and digestible.
 
 [1]: https://github.com/marak/Faker.js/
 [2]: https://www.instagram.com/emilia_clarke/

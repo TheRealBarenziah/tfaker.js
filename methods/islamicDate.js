@@ -63,8 +63,9 @@ function kuwaiticalendar(adjust) {
   }
   year = cc - 4716;
 
+  var wd;
   if (adjust) {
-    var wd = gmod(jd + 1 - adjust, 7) + 1;
+    wd = gmod(jd + 1 - adjust, 7) + 1;
   } else {
     wd = gmod(jd + 1, 7) + 1;
   }

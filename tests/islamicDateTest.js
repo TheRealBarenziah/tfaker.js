@@ -8,5 +8,3 @@ assert.strictEqual(typeof islamicDate(), "string");
 // that should also be true with vanilla func + alignment integer (it isnt atm)
 // other strings than fake/zif don't return undefined 
 };
-
-console.log(islamicDate("zif"))
