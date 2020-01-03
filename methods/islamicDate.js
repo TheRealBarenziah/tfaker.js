@@ -8,6 +8,11 @@ function kuwaiticalendar(adjust) {
   var day = today.getDate();
   var month = today.getMonth();
   var year = today.getFullYear();
+  var m = month + 1;
+  var y = year;
+  var a = Math.floor(y / 100);
+  var b = 2 - a + Math.floor(a / 4);
+
   var jd =
     Math.floor(365.25 * (y + 4716)) +
     Math.floor(30.6001 * (m + 1)) +
@@ -24,15 +29,12 @@ function kuwaiticalendar(adjust) {
     today = new Date(todaymili);
   }
 
-  var m = month + 1;
-  var y = year;
+
   if (m < 3) {
     y -= 1;
     m += 12;
   }
 
-  var a = Math.floor(y / 100);
-  var b = 2 - a + Math.floor(a / 4);
   if (y < 1583) {
     b = 0;
   }

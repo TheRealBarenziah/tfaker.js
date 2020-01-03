@@ -35,12 +35,13 @@ tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com
 tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.com/800/600"
 ```
 ### Utils
--   tfaker.realDate() `// shortcut for new Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+-   tfaker.realDate() `// random past century Date => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
 -   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
-**NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* or *"fake"* **string** parameter:
+**NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* / *"fake"* **string** parameter:
 ```javascript
 tfaker.islamicDate(1); // returns islamicDate(1) +1 day => "Jumuah, 29 Muharram 1441 AH".
 tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt, 4 Jumadal Ula 1384 AH"
+tfaker.islamicDate("fake"); // works the same
 ```
 *Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
 ___
