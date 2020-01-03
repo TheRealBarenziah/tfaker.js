@@ -8,8 +8,12 @@ assert.strictEqual(typeof firstName(), "string");
 assert.strictEqual(typeof lastName, "function");
 assert.strictEqual( (function(){
   var fullname = firstName() + " " + lastName();
-  if (typeof fullname === "string") return true;
-  else return false;
+  if (typeof fullname === "string") {
+    return true;
+  }
+  else {
+    return false;
+  } 
 })(), true);
 assert.notStrictEqual(lastName(), "Blackfyre");
 };

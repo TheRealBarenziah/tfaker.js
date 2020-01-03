@@ -9,10 +9,10 @@ module.exports = exports = function email () {
   var haxzor = function (string) {
     var charArray = [];
     for (var i = 0; i < string.length; i++){
-      if (i % 2 == 0) {
-        charArray.push(string[i].toUpperCase());
+      if (i % 2 === 0) {
+        charArray.push(string[parseInt(i)].toUpperCase());
       }
-      else charArray.push(string[i]);
+      else charArray.push(string[parseInt(i)]);
     }
     return charArray.join("");
   };

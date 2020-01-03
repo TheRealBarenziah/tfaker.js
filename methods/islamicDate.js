@@ -1,11 +1,11 @@
-function gmod(n, m) {
+var gmod = function(n, m) {
   return ((n % m) + m) % m;
-}
+};
 
 function kuwaiticalendar(adjust) {
   var myRes = new Array(8);
   var today = new Date();
-  if (adjust && (typeof adjust === "number")) {
+  if (adjust && typeof adjust === "number") {
     myRes[0] = day; //calculated day (CE)
     myRes[1] = month - 1; //calculated month (CE)
     myRes[2] = year; //calculated year (CE)
@@ -24,29 +24,38 @@ function kuwaiticalendar(adjust) {
     m += 12;
   }
 
-  var a = Math.floor(y / 100.);
-  var b = 2 - a + Math.floor(a / 4.);
-  if (y < 1583) b = 0;
-  if (y == 1582) {
-    if (m > 10) b = -10;
-    if (m == 10) {
+  var a = Math.floor(y / 100);
+  var b = 2 - a + Math.floor(a / 4);
+  if (y < 1583) {
+    b = 0;
+  }
+  if (y === 1582) {
+    if (m > 10) {
+      b = -10;
+    }
+    if (m === 10) {
       b = 0;
       if (day > 4) b = -10;
     }
   }
 
-  var jd = Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + day + b - 1524;
+  var jd =
+    Math.floor(365.25 * (y + 4716)) +
+    Math.floor(30.6001 * (m + 1)) +
+    day +
+    b -
+    1524;
 
   b = 0;
   if (jd > 2299160) {
     a = Math.floor((jd - 1867216.25) / 36524.25);
-    b = 1 + a - Math.floor(a / 4.);
+    b = 1 + a - Math.floor(a / 4);
   }
   var bb = jd + b + 1524;
   var cc = Math.floor((bb - 122.1) / 365.25);
   var dd = Math.floor(365.25 * cc);
   var ee = Math.floor((bb - dd) / 30.6001);
-  day = (bb - dd) - Math.floor(30.6001 * ee);
+  day = bb - dd - Math.floor(30.6001 * ee);
   month = ee - 1;
   if (ee > 13) {
     cc += 1;
@@ -60,20 +69,22 @@ function kuwaiticalendar(adjust) {
     wd = gmod(jd + 1, 7) + 1;
   }
 
-  var iyear = 10631. / 30.;
+  var iyear = 10631 / 30;
   var epochastro = 1948084;
   //  var epochcivil = 1948085;   <------------ EPOCHCIVIL unused var, if uncomment goto 68
 
-  var shift1 = 8.01 / 60.;
+  var shift1 = 8.01 / 60;
 
   var z = jd - epochastro;
-  var cyc = Math.floor(z / 10631.);
+  var cyc = Math.floor(z / 10631);
   z = z - 10631 * cyc;
   var j = Math.floor((z - shift1) / iyear);
   var iy = 30 * cyc + j;
   z = z - Math.floor(j * iyear + shift1);
   var im = Math.floor((z + 28.5001) / 29.5);
-  if (im == 13) im = 12;
+  if (im === 13) {
+    im = 12;
+  }
   var id = z - Math.floor(29.5001 * im - 29);
 
   myRes[0] = day; //calculated day (CE)
@@ -88,23 +99,58 @@ function kuwaiticalendar(adjust) {
 }
 
 module.exports = function islamicDate(adjustment) {
-  var wdNames = new Array("Ahad", "Ithnin", "Thulatha", "Arbaa", "Khams", "Jumuah", "Sabt");
-  var iMonthNames = new Array("Muharram", "Safar", "Rabi'ul Awwal", "Rabi'ul Akhir",
-    "Jumadal Ula", "Jumadal Akhira", "Rajab", "Sha'ban",
-    "Ramadan", "Shawwal", "Dhul Qa'ada", "Dhul Hijja");
+  var wdNames = new Array(
+    "Ahad",
+    "Ithnin",
+    "Thulatha",
+    "Arbaa",
+    "Khams",
+    "Jumuah",
+    "Sabt"
+  );
+  var iMonthNames = new Array(
+    "Muharram",
+    "Safar",
+    "Rabi'ul Awwal",
+    "Rabi'ul Akhir",
+    "Jumadal Ula",
+    "Jumadal Akhira",
+    "Rajab",
+    "Sha'ban",
+    "Ramadan",
+    "Shawwal",
+    "Dhul Qa'ada",
+    "Dhul Hijja"
+  );
 
   if (adjustment === "zif" || adjustment === "fake") {
-    var randomPast = kuwaiticalendar(-Math.round((Math.random() * 90) * 365.2422))
-    var fakeIDate = wdNames[Math.round(Math.random() * 7)] + ", "
-      + randomPast[5] + " " + iMonthNames[randomPast[6]] + " " + randomPast[7] + " AH"
+    var randomPast = kuwaiticalendar(
+      -Math.round(Math.random() * 90 * 365.2422)
+    );
+    var fakeIDate =
+      wdNames[Math.round(Math.random() * 7)] +
+      ", " +
+      randomPast[5] +
+      " " +
+      iMonthNames[randomPast[6]] +
+      " " +
+      randomPast[7] +
+      " AH";
     return fakeIDate;
-  }
-
-  else
+  } 
+  else {
     var iDate = kuwaiticalendar(adjustment);
-    var outputIslamicDate = wdNames[iDate[4]] + ", "
-    + iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
-  return outputIslamicDate;
-}
+    var outputIslamicDate =
+      wdNames[iDate[4]] +
+      ", " +
+      iDate[5] +
+      " " +
+      iMonthNames[iDate[6]] +
+      " " +
+      iDate[7] +
+      " AH";
+    return outputIslamicDate;
+  }
+};
 
 // original source : https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
