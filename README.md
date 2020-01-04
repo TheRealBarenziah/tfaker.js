@@ -1,12 +1,11 @@
 # tfaker.js
 ## Faking Targaryen data has never been easier
-![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 [![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)  
+![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TheRealBarenziah/tfaker.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
-[![CodeFactor](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js/badge)](https://www.codefactor.io/repository/github/therealbarenziah/tfaker.js)
 ## Compatibility
 [![Node](https://img.shields.io/badge/Node%20%3E%3D-0.10.48-brightgreen)](https://nodejs.org/ca/blog/release/v0.10.48/)  
 *[node.green][8] is lying about 0.10.48 not supporting `parseInt()`. You can check for yourself : `nvm use 0.10.48`.*  
@@ -22,6 +21,7 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 -   tfaker.firstName() `// random output => "Aegon"`
 -   tfaker.lastName() `// output => "Targaryen"`
 -   tfaker.fullName() `// random output => "Visenya Targaryen"`
+-   tfaker.dragon() `// random output => "Meraxes"`
 -   tfaker.email() `// random output => "dragonchan35@dragonstone.wst"`
 -   tfaker.country() `// random output => "Westeros"`
 -   tfaker.region() `// random output => "The Red Waste"`

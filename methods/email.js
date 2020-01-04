@@ -1,10 +1,12 @@
 var rand = require("../methods/utils/getRandomElementFromArray.js");
 var emails = require("../content/emails.js");
+var dragons = require("../content/dragons.js");
 
 module.exports = exports = function email () {
   var random = Math.floor(Math.random() * 99) + 1;
   var randomWord = rand(emails.words);
   var randomDomain = rand(emails.domains);
+  var randomDragon = rand(dragons);
 
   var haxzor = function (string) {
     var charArray = [];
@@ -19,13 +21,16 @@ module.exports = exports = function email () {
     return charArray.join("");
   };
 
-  if ( ( 0 < random ) && ( random <= 25 ) ) {
+  if ( ( 0 < random ) && ( random <= 20 ) ) {
     return "xXx_" + haxzor(randomWord) + Math.floor((random / 10) + 2) + "_xXx" + randomDomain;
   }
-  if ( ( 25 < random ) && ( random <= 50 ) ) {
+  if ( ( 20 < random ) && ( random <= 40 ) ) {
     return randomWord + "chan" + random + randomDomain;
   }
-  if ( ( 50 < random ) && ( random <= 75 ) ) {
+  if ( ( 40 < random ) && ( random <= 60 ) ) {
+    return randomDragon + Math.floor((random / 10) + 1) + randomDomain;
+  }
+  if ( ( 60 < random ) && ( random <= 80 ) ) {
     return "uwu" + randomWord + "qt" + Math.floor(random / 10) + randomDomain;
   }
   else {
