@@ -15,5 +15,5 @@ module.exports = exports = function islamicDateTest() {
   assert.strictEqual(typeof islamicDate("zif"), "string");
   assert.strictEqual(typeof islamicDate("fake"), "string");
   assert.notStrictEqual(x, y);
-  assert.notStrictEqual(typeof islamicDate(";eval('alert(!![])')"), undefined);
+  assert.notStrictEqual(typeof islamicDate(";eval('alert(!![])')"), "undefined");
 };

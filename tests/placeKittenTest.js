@@ -10,7 +10,7 @@ module.exports = exports = function placeKittenTest() {
   assert.strictEqual(typeof placeKitten(), "string");
   assert.strictEqual(typeof x, "number");
   assert.strictEqual(typeof y, "number");
-  assert.strictEqual(typeof placeKitten(function (i) { return --i }), "string");
+  assert.strictEqual(typeof placeKitten(function (i) { return --i; }), "string");
   assert.strictEqual(typeof placeKitten("{'foo':'bar'}"), "string");
   assert.strictEqual(typeof placeKitten({ "foo": "bar" }), "string");
 

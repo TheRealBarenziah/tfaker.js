@@ -1,19 +1,19 @@
 # tfaker.js
 ## Faking Targaryen data has never been easier
 [![https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tfaker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tfaker)  
-![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)
+![Daenerys Targaryen](https://i.ibb.co/FJcDwz2/Ciwa-MU5-Ws-AAFgdc.jpg)  
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TheRealBarenziah/tfaker.js)
 [![Codacy Badgegih](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
 ## Compatibility
 [![Node](https://img.shields.io/badge/Node%20%3E%3D-0.10.48-brightgreen)](https://nodejs.org/ca/blog/release/v0.10.48/)  
-Zero dependencies should ensure tfaker long-term compatibility with 0.10.48 upwards.  
+Zero dependencies policy is to ensure tfaker long-term compatibility with 0.10.48.  
 
 ## Import
 ```javascript
-var tfaker = require("tfaker");   // with npm (tfaker is in node_modules)   
-var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/index.js)
+var tfaker = require("tfaker");   // everywhere with npm (tfaker is in node_modules)   
+var tfaker = require("./tfaker");   // locally with git clone (absolute path to tfaker/index.js)
 ```
 ## Methods
 ### Targaryens
@@ -26,7 +26,7 @@ var tfaker = require("./tfaker");   // with git clone (absolute path to tfaker/i
 -   tfaker.region() `// random output => "The Red Waste"`
 -   tfaker.city() `// random output => "Braavos"`
 ### Kittens
--   tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`
+-   tfaker.placeKitten() `// display 100px kitten image. output => "http://placekitten.com/100/100"`  
 **NB**: this method can also use one or two **Integer** arguments, translating into *width* & *height* in pixels:
 ```javascript
 tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com/420/420"
@@ -34,7 +34,7 @@ tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.c
 ```
 ### Utils
 -   tfaker.realDate() `// random Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
--   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`
+-   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`  
 **NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* / *"fake"* **string** parameter:
 ```javascript
 tfaker.islamicDate(1); // returns islamicDate(1) +1 day => "Jumuah, 29 Muharram 1441 AH".
@@ -71,5 +71,3 @@ ___
 [5]: https://github.com/babel/babel
 [6]: https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
 [7]: https://gameofthrones.fandom.com/wiki/Valyrian_religion#In_the_books
-[8]: https://node.green/#ES2015-built-in-extensions-Number-properties-Number-parseInt
-[9]: https://github.com/nvm-sh/nvm#installing-and-updating
