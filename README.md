@@ -8,7 +8,7 @@
 [![Codacy Badgegih](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
 ## Compatibility
 [![Node](https://img.shields.io/badge/Node%20%3E%3D-0.10.48-brightgreen)](https://nodejs.org/ca/blog/release/v0.10.48/)  
-Zero dependencies policy is to ensure tfaker long-term compatibility with 0.10.48.  
+Zero dependencies policy is to ensure **tfaker** long-term compatibility with 0.10.48.  
 
 ## Import
 ```javascript
@@ -33,7 +33,7 @@ tfaker.placeKitten(420); // one parameter for squares => "http://placekitten.com
 tfaker.placeKitten(800, 600); // two for width & height => "http://placekitten.com/800/600"
 ```
 ### Utils
--   tfaker.realDate() `// random Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`
+-   tfaker.realDate() `// random Date(last century) => "Wed Jul 31 1985 00:10:18 GMT+0100(CEST)"`  
 -   tfaker.islamicDate() `// islamic new Date(); output => "Jumuah, 28 Muharram 1441 AH"`  
 **NB**: this method accepts either an *adjustment* **Integer** parameter, or a *"zif"* / *"fake"* **string** parameter:
 ```javascript
