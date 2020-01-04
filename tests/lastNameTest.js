@@ -8,4 +8,3 @@ module.exports = exports = function lastNameTest () {
   assert.strictEqual(lastName(), lastname);
   assert.notStrictEqual(lastName(), "Blackfyre");
 };
-// To support Blackfyre please fork

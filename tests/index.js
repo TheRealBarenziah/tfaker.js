@@ -7,6 +7,7 @@ var countryTest = require("../tests/countryTest.js");
 var emailTest = require("../tests/emailTest.js");
 var regionTest = require("../tests/regionTest.js");
 var dateTest = require("../tests/dateTest.js");
+var dragonTest = require("../tests/dragonTest.js");
 
 var tests = function() {
   firstNameTest();
@@ -18,6 +19,7 @@ var tests = function() {
   emailTest();
   regionTest();
   dateTest();
+  dragonTest();
 };
 
 tests();

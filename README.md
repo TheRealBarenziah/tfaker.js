@@ -5,11 +5,10 @@
 [![Build Status](https://travis-ci.org/TheRealBarenziah/tfaker.js.svg?branch=master)](https://travis-ci.org/TheRealBarenziah/tfaker.js)
 [![Known Vulnerabilities](https://snyk.io/test/github/TheRealBarenziah/tfaker.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/TheRealBarenziah/tfaker.js?targetFile=package.json)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TheRealBarenziah/tfaker.js)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
+[![Codacy Badgegih](https://api.codacy.com/project/badge/Grade/aff51c159ee7411f80593cbe77d9babd)](https://www.codacy.com/manual/TheRealBarenziah/tfaker.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheRealBarenziah/tfaker.js&amp;utm_campaign=Badge_Grade)
 ## Compatibility
 [![Node](https://img.shields.io/badge/Node%20%3E%3D-0.10.48-brightgreen)](https://nodejs.org/ca/blog/release/v0.10.48/)  
-*[node.green][8] is lying about 0.10.48 not supporting `parseInt()`. You can check for yourself : `nvm use 0.10.48`.*  
-*NB: having zero dependencies should ensure tfaker long-term compatibility with 0.10.48*
+Zero dependencies should ensure tfaker long-term compatibility with 0.10.48 upwards.  
 
 ## Import
 ```javascript
@@ -42,10 +41,10 @@ tfaker.islamicDate(1); // returns islamicDate(1) +1 day => "Jumuah, 29 Muharram 
 tfaker.islamicDate("zif"); // returns random past date within 8O years => "Sabt, 4 Jumadal Ula 1384 AH"
 tfaker.islamicDate("fake"); // works the same
 ```
-*Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall [The Valyrian Freehold was very tolerant of other religions][7].*
+*Stumbled upon [this function][6] while searching for lunar calendars for Westeros. Since faker.js doesn't have this feature, I've thought it would be cool to have. Afterall the [Valyrian Freehold was very tolerant of other religions][7].*
 ___
 ## EZ Tweaks
-Each file in `./content` is named after the method calling it, and is basically an array of content. You can customize any of those methods simply by dropping your stuff into the array. Just respect data types and you'll be good.
+Each file in `./content` is named after the method calling it, and is basically an array of content. You can customize any of those methods by dropping your stuff into the array.  
 ___
 ## F.A.Q
 ### Have you heard about Babeljs
@@ -73,3 +72,4 @@ ___
 [6]: https://www.al-habib.info/islamic-calendar/hijricalendartext.htm
 [7]: https://gameofthrones.fandom.com/wiki/Valyrian_religion#In_the_books
 [8]: https://node.green/#ES2015-built-in-extensions-Number-properties-Number-parseInt
+[9]: https://github.com/nvm-sh/nvm#installing-and-updating

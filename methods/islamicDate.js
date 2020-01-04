@@ -76,7 +76,7 @@ function kuwaiticalendar(adjust) {
 
   var iyear = 10631 / 30;
   var epochastro = 1948084;
-  //  var epochcivil = 1948085;   <------------ EPOCHCIVIL unused var, if uncomment goto 68
+  //  var epochcivil = 1948085;   <--- EPOCHCIVIL unused var, if uncomment goto 68
 
   var shift1 = 8.01 / 60;
 
